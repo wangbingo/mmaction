@@ -7,7 +7,7 @@ if [[ ! -d "${DATA_DIR}" ]]; then
   mkdir -p ${DATA_DIR}
 fi
 
-wget "https://www.crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-RecognitionTask.zip"
+#wget "https://www.crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-RecognitionTask.zip"
 
 unzip -j UCF101TrainTestSplits-RecognitionTask.zip -d ${DATA_DIR}/
-rm UCF101TrainTestSplits-RecognitionTask.zip
+#rm UCF101TrainTestSplits-RecognitionTask.zip
