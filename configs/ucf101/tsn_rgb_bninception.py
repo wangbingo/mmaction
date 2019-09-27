@@ -32,7 +32,7 @@ img_norm_cfg = dict(
 
 data = dict(
     videos_per_gpu=32,
-    workers_per_gpu=2,
+    workers_per_gpu=0,
     train=dict(
         type=dataset_type,
         ann_file='data/ucf101/ucf101_train_split_1_rawframes.txt',
