@@ -97,7 +97,7 @@ def main():
     if args.out:
         print('writing results to {}'.format(args.out))
         mmcv.dump(outputs, args.out)
-
+    """
     gt_labels = []
     for i in range(len(dataset)):
         ann = dataset.get_ann_info(i)
@@ -116,7 +116,7 @@ def main():
     print("Mean Class Accuracy = {:.02f}".format(mean_acc * 100))
     print("Top-1 Accuracy = {:.02f}".format(top1 * 100))
     print("Top-5 Accuracy = {:.02f}".format(top5 * 100))
-
+    """
 
 if __name__ == '__main__':
     main()
