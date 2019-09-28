@@ -34,7 +34,8 @@ class BaseRecognizer(nn.Module):
             logger.info("load model from: {}".format(pretrained))
 
     def forward(self, num_modalities, img_meta, return_loss=True, **kwargs):
-        num_modalities = int(num_modalities[0])
+        #num_modalities = int(num_modalities[0])
+        num_modalities = 1
         if return_loss:
             return self.forward_train(num_modalities, img_meta, **kwargs)
         else:
