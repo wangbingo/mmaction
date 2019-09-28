@@ -97,6 +97,7 @@ def main():
     if args.out:
         print('writing results to {}'.format(args.out))
         mmcv.dump(outputs, args.out)
+        print(outputs)
     """
     gt_labels = []
     for i in range(len(dataset)):
